@@ -1,6 +1,5 @@
 
 
-
 class Receta{
   final int id;
   final String nombre;
