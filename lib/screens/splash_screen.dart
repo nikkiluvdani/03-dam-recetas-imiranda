@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:recetasapp/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen ({super.key});
@@ -13,12 +14,17 @@ class _SplashScreenState extends State<SplashScreen>{
   void initState(){
   super.initState();
 
-    Timer(const Duration(seconds:4), (){
-     Navigator.pushReplacement(context, 
-     MaterialPageRoute (builder: ()=> const  HomeScreen()),
-      );
-    });
-  }
+    Timer(const Duration(seconds: 4), () {
+     if (!mounted) return;
+
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+      builder: (context) => const HomeScreen(),
+      ),
+    );
+   });
+}
 
 
 @override 

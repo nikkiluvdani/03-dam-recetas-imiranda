@@ -12,7 +12,7 @@ class RecetaCard extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         elevation: 2,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-        child: Inkwell(
+        child: InkWell(
             onTap: onTap,
             borderRadius: BorderRadius.circular(14),
             child:Padding(
@@ -50,7 +50,7 @@ class RecetaCard extends StatelessWidget {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                        '${receta.cocina} • ${receta.dificultad} • ${receta.tiempoTotal} min',
+                                        '${receta.tiempoTotal} min • ${receta.porciones} porciones • ${receta.calificacion}',
                                         style: TextStyle(
                                             fontSize: 11.5,
                                             color: Colors.grey.shade600,
