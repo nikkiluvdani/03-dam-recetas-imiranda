@@ -50,7 +50,7 @@ class RecetaCard extends StatelessWidget {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                        '${receta.tiempoTotal} min • ${receta.porciones} porciones • ${receta.calificacion} ★',
+                                        '${receta.cocina} • ${receta.dificultad} • ${receta.tiempoTotal} min',
                                         style: TextStyle(
                                             fontSize: 11.5,
                                             color: Colors.grey.shade600,
